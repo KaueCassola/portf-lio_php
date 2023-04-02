@@ -18,3 +18,23 @@ body{
     display: flex;
     flex-direction: column;
 }
+#card1{
+    background-image: url('/img/bruxa.png');
+    background-repeat: no-repeat;
+}
+#card2{
+    background-image: url('/img/magica.png');
+    background-repeat: no-repeat;
+}
+#card3{
+    background-image: url('/img/mago2.png');
+    background-repeat: no-repeat;
+}
+.card:hover{
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    opacity: 0.85;
+}
+.texto-sobre{
+    text-shadow: 4px 4px 8px rgba(181,50,236,0.6);
+}

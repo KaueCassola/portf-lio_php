@@ -42,6 +42,15 @@ include 'url.php';
         <li class="nav-item"><a href="/index.php/contato" class="nav-link">Contato</a></li>
       </ul>
       <p class="text-center text-muted">© 2023 Kaue Cassola</p>
+      <?php
+        $txt = "visualizacao.txt";
+        $ler_arq = fopen($txt, 'r');
+        $leitura = fgets($ler_arq);
+        fclose($ler_arq);
+        $atualiza = fopen($txt, 'w');
+        fwrite($atualiza, $leitura + 1);
+        echo "<p>Contagem de visualizações: ". $leitura. '</p>';
+      ?>
       <p>Creditos de imagens ->></p>
             <a href="https://www.flaticon.com/br/stickers-gratis/livro-de-feiticos" title="livro de feitiços figurinhas">Livro de feitiços figurinhas criadas por Stickers - Flaticon</a>
           
