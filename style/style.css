@@ -29,11 +29,13 @@ body{
 #card3{
     background-image: url('/img/mago2.png');
     background-repeat: no-repeat;
+    
 }
 .card:hover{
     transition-timing-function: ease;
     transition-duration: 1s;
     opacity: 0.85;
+    box-shadow: 11px 10px 38px -12px rgba(46,171,255,1);
 }
 .texto-sobre{
     text-shadow: 4px 4px 8px rgba(181,50,236,0.6);

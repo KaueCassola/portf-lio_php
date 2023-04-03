@@ -14,9 +14,9 @@ include 'url.php';
 <body><script src="/scripts/app_js.js"></script>
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+              <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <img style="width:80px;" src="/img/mago.png" alt="">
-              <p style="text-shadow: 4px 3px 5px rgba(199,81,236,0.67);color:#7945E6;font-weight: 600;" class="fs-4">Kauê Cassola</p>
+              <p style="text-shadow: 4px 3px 5px rgba(199,81,236,0.67);color:#7945E6;font-weight: 600;font-size: 40px;" class="mb-2">Kauê Cassola</p>
               </a>
               <ul class="nav nav-pills d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <li class="nav-item"><a href="/index.php" class="nav-link" aria-current="page">Inicio</a></li>
@@ -58,9 +58,12 @@ include 'url.php';
       ?>
       <p>Creditos de imagens ->></p>
             <a href="https://www.flaticon.com/br/stickers-gratis/livro-de-feiticos" title="livro de feitiços figurinhas">Livro de feitiços figurinhas criadas por Stickers - Flaticon</a>
-          
+          Imagem de <a href="https://br.freepik.com/vetores-gratis/desenvolvedores-web-desenhados-a-mao_12063795.htm#query=linux&position=13&from_view=search&track=sph">Freepik</a>
+          <a href="https://br.freepik.com/fotos-gratis/vista-traseira-do-programador-trabalhando-a-noite-toda_5698334.htm#query=linux&position=27&from_view=search&track=sph">Imagem de pressfoto</a> no Freepik
+          <a href="https://br.freepik.com/vetores-gratis/computador-tecnologia-isometric-icone-servidor-sala-digital-dispositivo-jogo-elemento-para-desenho-pc-laptop_4103157.htm#query=linux&position=40&from_view=search&track=sph">Imagem de fullvector</a> no Freepik
     </footer>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 

@@ -8,9 +8,9 @@
     $URL = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     //echo "<h1>". $URL."</h1><br>";
     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || $_SERVER['SERVER_PORT'] === 443 ? "https://" : "http://";
-    if($protocol == "http://"){
-        header("Location: https://kauecassola.ga/index.php");
-    }
+    //if($protocol == "http://"){
+    //    header("Location: https://kauecassola.ga/index.php");
+    //}
     switch($URL){
         case "/";
         case "/index.php";
@@ -30,6 +30,58 @@
                             </div>
                         </div>
                     </div>
+
+
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card">
+            <img class="bd-placeholder-img card-img-top" src="img/album1.jpg" alt="" width="100%" height="225">
+            <div class="card-body">
+            <h2 class="card-title">Breve conteudo</h2>
+              <p class="card-text">BREVE ESPAÇO PARA CONTEUDO//</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="bd-placeholder-img card-img-top" src="img/album2.jpg" alt="" width="100%" height="225">
+            <div class="card-body">
+                <h2 class="card-title">Breve conteudo</h2>
+              <p class="card-text">BREVE ESPAÇO PARA CONTEUDO//</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="bd-placeholder-img card-img-top" src="img/album3.jpg" alt="" width="100%" height="225">
+            <div class="card-body">
+            <h2 class="card-title">Breve conteudo</h2>
+              <p class="card-text">BREVE ESPAÇO PARA CONTEUDO//</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+          
             </main>';
             break;
 
@@ -41,7 +93,7 @@
             </p>
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
               <div class="col">
-                <div id="card1" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div id="card1" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4">
                   <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                     <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold texto-sobre">Sistemas operacional em questão de ter mais convívio Windows também por ser fácil a adotação na utilização de softwares, mas Linux as distribuições em que estudo são Red Hat e Debian.</h3>
                   </div>
@@ -49,7 +101,7 @@
               </div>
         
               <div class="col">
-                <div id="card2" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div id="card2" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4">
                   <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                     <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold texto-sobre">Gosto de estudar linguagens de programação e suas funções, mesmo sabendo que os paradigmas são mais importantes.</h3>
                   </div>
@@ -57,7 +109,7 @@
               </div>
         
               <div class="col">
-                <div id="card3" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div id="card3" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4">
                   <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                     <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold texto-sobre">Curto jogos FPS e Ação online, já desisti do LOL(Mentira) :P</h3>
                   </div>
