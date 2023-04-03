@@ -7,7 +7,6 @@
     */
     $URL = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     //echo "<h1>". $URL."</h1><br>";
-    
     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || $_SERVER['SERVER_PORT'] === 443 ? "https://" : "http://";
     if($protocol == "http://"){
         header("Location: https://kauecassola.ga/index.php");
@@ -69,7 +68,38 @@
             break;
 
         case "/index.php/posts";
-            $conteudo_ = "PAGINA DE POSTS ESTA EM CONSTRUÇÃO";
+            $conteudo_ = '<main class="container">
+    <script>
+    posts_();
+    </script>
+            <div class="row g-5">
+              <div class="col-md-8">
+                <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                  Postagens
+                </h3>
+                <article id="blog" class="blog-post">
+
+                </article>      
+              </div>
+          
+              <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                  <div class="p-4 mb-3 bg-body-tertiary rounded">
+                    <h4 class="fst-italic">Sobre a pagina</h4>
+                    <p class="mb-0">Esta página posto conteudos relacionados a TI em que acho interessante e projetos.</p>
+                  </div>
+          
+                  <div class="p-4">
+                    <h4 class="fst-italic">Redes sociais</h4>
+                    <ol class="list-unstyled">
+                      <li><a target="_blank" href="https://github.com/KaueCassola">GitHub</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </main>';
             break;
 
         case "/index.php/contato";

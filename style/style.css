@@ -38,3 +38,12 @@ body{
 .texto-sobre{
     text-shadow: 4px 4px 8px rgba(181,50,236,0.6);
 }
+#rede-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer img{
+    margin: 10px;
+    width: 40px;
+}

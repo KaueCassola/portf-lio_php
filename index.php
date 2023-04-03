@@ -11,7 +11,7 @@ include 'url.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="/style/style.css">
   </head>
-<body>
+<body><script src="/scripts/app_js.js"></script>
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
               <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -29,9 +29,7 @@ include 'url.php';
             <?php
             // VARIAVEL QUE DEPENDENDO DA URL MUDA O CONTEUDO.
             echo $conteudo_;
-            ?>
-    <script src="/scripts/app_js.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+            ?> 
 
   <div class="container">
     <footer class="py-3 my-4">
@@ -41,6 +39,13 @@ include 'url.php';
         <li class="nav-item"><a href="/index.php/sobre" class="nav-link">Sobre</a></li>
         <li class="nav-item"><a href="/index.php/contato" class="nav-link">Contato</a></li>
       </ul>
+      <div id="rede-sociais">
+        <a href="https://pt-br.facebook.com/kaue.cassola/" target="_blank" rel="noopener noreferrer"><img src="../img/rede-social/Facebook.png" alt="rede social facebook"></a>
+        <a href="https://www.instagram.com/kaue_cassola/" target="_blank" rel="noopener noreferrer"><img src="../img/rede-social/Instagram.png" alt="rede social instagram"></a>
+        <a href="https://br.linkedin.com/in/kau%C3%AA-cassola" target="_blank" rel="noopener noreferrer"><img src="../img/rede-social/LinkedIn.png" alt="rede social linkedin"></a>
+        <a href="https://api.whatsapp.com/send?phone=5511945830731&text=Pode%20deixa%20sua%20mensagem" target="_blank" rel="noopener noreferrer"><img src="../img/rede-social/WhatsApp.png" alt="rede social whatsapp"></a>
+        <a href="https://www.youtube.com/@TutoriaisEmHD100/" target="_blank" rel="noopener noreferrer"><img src="../img/rede-social/Youtube.png" alt="rede social youtube"></a>
+      </div>
       <p class="text-center text-muted">© 2023 Kaue Cassola</p>
       <?php
         $txt = "visualizacao.txt";
@@ -56,7 +61,7 @@ include 'url.php';
           
     </footer>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 
 </html>

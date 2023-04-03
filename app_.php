@@ -24,15 +24,51 @@ if(isset($_GET['get_contato_key'])){
             }
         }else{
             // CASO NÃO ENTRE COM NENHUM GET_ID RETORNAR TODOS CONTATOS
+            $contato_array = array();
             $consulta = $conn->query('SELECT * FROM contatos;');
             while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
-                echo json_encode($linha);
+                array_push($contato_array, $linha);
             }
+            echo json_encode($contato_array);
         }
     }else{
         echo "fail key";
     }
 }
+
+    /*  REQUISIÇÃO GET PARA POSTS
+        GET_POSTS_KEY MANDAR VIA POST PARA INSERIR
+    */
+if(isset($_GET['get_post_key'])){
+    if($_GET['get_post_key'] == $key){
+            $posts_array = array();
+            $consulta = $conn->query('SELECT * FROM posts;');
+            while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
+                array_push($posts_array, $linha);
+            }
+            echo json_encode($posts_array);
+    }else{
+        echo "fail key";
+    }
+}
+
+    /*  REQUISIÇÃO POST PARA POSTS
+        POST_POSTS_KEY MANDAR VIA POST PARA INSERIR
+    */
+if(isset($_POST['post_posts_key'])){
+    if($_POST['post_posts_key'] == $key){
+        $conteudo = [
+            'titulo' => $_POST['titulo'],
+            'conteudo' => $_POST['conteudo']
+        ];
+        $stmt= $conn->prepare('INSERT INTO posts (titulo, conteudo, dt_post) VALUES (:titulo, :conteudo, NOW())');
+        $stmt->execute($conteudo);
+        echo "sucess";
+    }else{
+        echo "fail key";
+    }
+}
+
     /*  REQUISIÇÃO POST CONTATOS
         POST_CONTATO_KEY MANDAR VIA POST PARA INSERIR
     */
