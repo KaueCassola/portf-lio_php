@@ -48,4 +48,9 @@ body{
 footer img{
     margin: 10px;
     width: 40px;
+    transition: all 0.3s;
+}
+
+footer img:hover{
+	transform: scale(1.1);
 }

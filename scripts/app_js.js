@@ -30,15 +30,18 @@ function limpa_form(){
             const post = jsonData[index];
             const h2 = document.createElement("h2");
             const p = document.createElement("p");
+            const p2 = document.createElement("p");
+            p.classList.add("lead");
+            p2.classList.add("lead");
             const titulo = document.createTextNode(post.titulo);
             const data_post = document.createTextNode(post.dt_post);
             const conteudo = document.createTextNode(post.conteudo);
             //html_post ="<h2 class='blog-post-title mb-1'>"+post.titulo+"</h2><p class='blog-post-meta'>"+post.dt_post+"</p><p>"+post.conteudo+"</p><hr>";
             h2.appendChild(titulo)
             p.appendChild(data_post)
-            conteudoAp = p.appendChild(conteudo)
+            p2.appendChild(conteudo)
             document.getElementById('blog').appendChild(h2)
             document.getElementById('blog').appendChild(p)
-            document.getElementById('blog').appendChild(conteudoAp)
+            document.getElementById('blog').appendChild(p2)
         }
       }

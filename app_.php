@@ -69,7 +69,7 @@ if(isset($_POST['post_posts_key'])){
     }
 }
 
-    /*  REQUISIÇÃO POST CONTATOS
+    /*  REQUISIÇÃO POST PARA CONTATOS
         POST_CONTATO_KEY MANDAR VIA POST PARA INSERIR
     */
 if(isset($_POST['post_contato_key'])){
